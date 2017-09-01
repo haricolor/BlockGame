@@ -78,14 +78,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Ball.cs" />
-    <Compile Include="Assets\Script\Block.cs" />
-    <Compile Include="Assets\Script\Life.cs" />
-    <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\Score.cs" />
+    <ProjectReference Include="BlockBreake.Plugins.csproj">
+      <Project>{F0696379-1C24-5D0B-EE2A-4B6B5042E412}</Project>
+      <Name>BlockBreake.Plugins</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Pixel Font - Tripfive\_README.txt" />
+    <Compile Include="Assets\Script\Play\BackGround.cs" />
+    <Compile Include="Assets\Script\Play\Ball.cs" />
+    <Compile Include="Assets\Script\Play\Bar.cs" />
+    <Compile Include="Assets\Script\Play\Block.cs" />
+    <Compile Include="Assets\Script\Play\BlockManager.cs" />
+    <Compile Include="Assets\Script\Play\ButtonBase.cs" />
+    <Compile Include="Assets\Script\Play\CameraMove.cs" />
+    <Compile Include="Assets\Script\Play\Life.cs" />
+    <Compile Include="Assets\Script\Play\PlayManager.cs" />
+    <Compile Include="Assets\Script\Play\Player.cs" />
+    <Compile Include="Assets\Script\Play\ResultWindow.cs" />
+    <Compile Include="Assets\Script\Play\Score.cs" />
+    <Compile Include="Assets\Script\Select\Arrow.cs" />
+    <Compile Include="Assets\Script\Select\SelectManager.cs" />
+    <Compile Include="Assets\Script\Select\StageImage.cs" />
+    <Compile Include="Assets\Script\Select\StageImageManager.cs" />
+    <Compile Include="Assets\Script\Select\StageText.cs" />
+    <Compile Include="Assets\Script\Title\Choice.cs" />
+    <Compile Include="Assets\Script\Title\TitleManage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
